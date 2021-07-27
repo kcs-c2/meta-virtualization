@@ -16,7 +16,7 @@ DEPENDS = " \
 
 PNBLACKLIST[podman] ?= "${@bb.utils.contains('BBFILE_COLLECTIONS', 'security', '', 'Depends on libseccomp from meta-security which is not included', d)}"
 
-SRCREV = "09e8afe3a9f19aefc45b3004a56f7d8f87f13abf"
+SRCREV = "5ef6c011fc25ab78a6cba583cfef81c0a66d81af"
 SRC_URI = " \
     git://github.com/containers/libpod.git;branch=v3.2 \
 "
